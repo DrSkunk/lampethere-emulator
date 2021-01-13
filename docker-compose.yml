@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  mosquitto:
+    image: pigr8/mosquitto-websockets
+    ports:
+      - 1883:1883
+      - 9001:9001
+
+volumes:
+  store:
+  config:
+  mosquitto-data:
+  mosquitto-logs:
+  mosquitto-conf:
